@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  networking.hostName = "onix"; # Define your hostname.
+
   # Bootloader.
   boot.loader.limine = {
     enable = true;
@@ -21,6 +23,7 @@
     interface_branding:
     '';
   };
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.networkmanager.enable = true;
 
