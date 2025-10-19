@@ -7,7 +7,9 @@
 > as possible then please issue a PR that will be
 > reviewed and merged.
 
-My home-manager + flakes based NixOS dotfiles.
+My NixOS dotfiles. Powered by [Flakes](https://nix.dev/concepts/flakes.html), [Home-Manager](https://nix-community.github.io/home-manager/index.xhtml), the [Caelestia Shell](https://github.com/caelestia-dots/shell) and [Hyprland](https://hypr.land).
+
+For a guide on using flakes I would recommend reading: [NixOS and Flakes](https://nixos-and-flakes.thiscute.world)
 
 ## Usage
 To use the dotfiles it takes a small amount of setup.
@@ -23,12 +25,16 @@ To use the dotfiles it takes a small amount of setup.
 2. Install [home-manager](https://nix-community.github.io/home-manager/index.xhtml) with flakes enabled in a [standalone fashion](https://nix-community.github.io/home-manager/index.xhtml#sec-flakes-standalone)
 
 3. Move the `home-manager` to `~/.config/home-manager`:
-`mv home-manager ~/.config/home-manager`
+```console
+mv home-manager ~/.config/home-manager
+```
 
 4. Replace my username and home directory with yours
 
 5. Move the `etc/system.nix` to `/etc/nixos/`:
-`sudo mv etc/system.nix /etc/nixos/`
+```console
+sudo mv etc/system.nix /etc/nixos/
+```
 
 6. Include `system.nix` in your `configuration.nix`
 
@@ -40,6 +46,12 @@ To use the dotfiles it takes a small amount of setup.
   - kernel
 
 8. Move `etc/flake.nix` to `/etc/nixos/`:
-`sudo mv etc/flake.nix /etc/nixos/`
+```console
+sudo mv etc/flake.nix /etc/nixos/
+```
 
-9. Run `sudo nixos-rebuild switch` and `home-manager switch`
+9. Run:
+```console
+sudo nixos-rebuild switch
+home-manager switch
+```
