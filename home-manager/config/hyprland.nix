@@ -16,6 +16,11 @@
       monitor = ", preferred, auto, 1.25";
       xwayland.force_zero_scaling = true;
 
+      env = [
+        "XCURSOR_SIZE,36"
+        "XCURSOR_THEME,Banana"
+      ];
+
       source = [
         "~/.local/state/caelestia/theme/hyprland.conf"
       ];

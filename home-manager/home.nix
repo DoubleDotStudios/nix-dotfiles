@@ -38,6 +38,7 @@
     nitch
     reversal-icon-theme
     eza
+    banana-cursor
   ];
 
   programs.zoxide.enableFishIntegration = true;
