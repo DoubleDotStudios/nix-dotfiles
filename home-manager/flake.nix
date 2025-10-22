@@ -1,5 +1,5 @@
 {
-  description = "vaelixd home-manager configuration";
+  description = "onix home-manager configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
