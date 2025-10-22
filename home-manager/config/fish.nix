@@ -18,6 +18,9 @@
       alias c="clear"
       alias v="nvim"
       alias df="duf -hide special"
+      alias ls="eza -1 --icons=auto --sort=name --group-directories-first"
+      alias lal="eza -lh --icons=auto --sort=name --group-directories-first"
+      alias tree="eza --tree --icons=auto --sort=name"
 
       zoxide init fish | source
       fzf --fish \
