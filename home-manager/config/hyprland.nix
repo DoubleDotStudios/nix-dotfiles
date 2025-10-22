@@ -110,7 +110,7 @@
 
       bindr = [
         "$mod CTRL SHIFT, R, exec, caelestia shell kill"
-        "$mod CTRL ALT, R, exec, caelestia shell kill; caelestia-shell -d"
+        "$mod CTRL ALT, R, exec, caelestia-shell -k; sleep 3s; caelestia-shell -d"
       ];
 
       general = {
