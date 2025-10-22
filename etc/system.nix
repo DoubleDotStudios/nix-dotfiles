@@ -67,6 +67,7 @@
     xh
     git
     pnpm
+    btop
     nodejs_24
 
     # Fonts
