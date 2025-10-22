@@ -7,7 +7,6 @@
     ./config/kitty.nix
     ./config/rofi.nix
     ./config/caelestia.nix
-    ./config/vicinae.nix
     ./config/hyprland.nix
   ];
 
