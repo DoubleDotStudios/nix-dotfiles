@@ -11,7 +11,22 @@ My NixOS dotfiles. Powered by [Flakes](https://nix.dev/concepts/flakes.html), [H
 
 For a guide on using flakes I would recommend reading: [NixOS and Flakes](https://nixos-and-flakes.thiscute.world)
 
-## Usage
+1. [Semi-automatic Install](#semi-automatic-install)
+2. [Manual Install](#manual-install)
+
+## Semi-automatic Install
+> [!IMPORTANT]
+> Please do not run random scripts you find online.
+> Always read them first to find out what they do.
+> You can find this one at `install.sh`
+
+To do a mostly automatic install run:
+> sudo is required due to some files needing to be moved to `/etc/nixos`
+```
+curl -fsSL https://raw.githubusercontent.com/DoubleDotStudios/onix-dots/refs/heads/main/install.sh | sudo bash
+```
+
+## Manual Install
 To use the dotfiles it takes a small amount of setup.
 
 > [!IMPORTANT]
