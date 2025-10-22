@@ -9,8 +9,6 @@
     ./config/caelestia.nix
     ./config/hyprland.nix
   ];
-
-
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "vaelixd";
@@ -38,6 +36,8 @@
     quickshell
     gh
     nitch
+    reversal-icon-theme
+    eza
   ];
 
   programs.zoxide.enableFishIntegration = true;
@@ -50,6 +50,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    QS_ICON_THEME = "Reversal-dark";
   };
 
   programs.home-manager.enable = true;
