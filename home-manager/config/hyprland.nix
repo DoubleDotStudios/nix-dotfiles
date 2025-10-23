@@ -18,7 +18,7 @@
 
       env = [
         "XCURSOR_SIZE,36"
-        "XCURSOR_THEME,Banana"
+        "XCURSOR_THEME,graphite-dark-nord"
       ];
 
       source = [
@@ -29,23 +29,12 @@
         "caelestia-shell"
       ];
 
-      # exec = [
-      #   "hyprctl dispatch submap global"
-      # ];
-
-      # submap = "global";
-
       bind = [
         # Applications
         "$mod, F, exec, $browser"
         "$mod, Return, exec, $term"
 
-        # Rofi
-        # "$mod, A, exec, rofi -show drun"
-        # "ALT, Tab, exec, rofi -show window"
-
         # Environment
-        # "$mod CTRL, B, exec, hyprpanel --quit || hyprpanel"
         "$mod, Q, killactive,"
 
         # Caelestia
@@ -57,10 +46,10 @@
         "$mod SHIFT ALT, S, global, caelestia:screenshot"
         "$mod, R, exec, gpu-screen-recorder -w portal -f 60 -ac opus -k h264 -a default_output -q high -cursor yes -cr limited -o ~/Videos/(date '+%d-%m-%Y_%R').mp4"
         "$mod SHIFT, R, exec, gpu-screen-recorder -w portal -restore-portal-session yes -f 60 -ac opus -k h264 -a default_output -q high -cursor yes -cr limited -o ~/Videos/(date '+%d-%m-%Y_%R').mp4"
+        "$mod SHIFT, C, exec, hyprpicker -a"
         # "$mod ALT, R, exec, caelestia record -s"
         # "CTRL ALT, R, exec, caelestia record"
         # "$mod SHIFT ALT, R, exec, caelestia record -r"
-        # "$mod SHIFT, C, exec, hyprpicker -a"
       ]
       ++(
           builtins.concatLists (builtins.genList (i:
@@ -74,7 +63,6 @@
       );
 
       bindin = [
-        # "$mod, catchall, global, caelestia:launcherInterrupt"
         "$mod, mouse:272, global, caelestia:launcherInterrupt"
         "$mod, mouse:273, global, caelestia:launcherInterrupt"
         "$mod, mouse:274, global, caelestia:launcherInterrupt"
@@ -162,7 +150,7 @@
         kb_layout = "us";
         kb_variant = "altgr-intl";
         kb_model = "";
-        kb_options = "caps:none, caps:return";
+        kb_options = "caps:none,caps:return";
         kb_rules = "";
 
         repeat_delay = 400;
