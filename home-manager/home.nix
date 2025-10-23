@@ -5,7 +5,6 @@
     ./config/bash.nix
     ./config/fish.nix
     ./config/kitty.nix
-    ./config/rofi.nix
     ./config/caelestia.nix
     ./config/hyprland.nix
   ];
@@ -38,7 +37,7 @@
     nitch
     reversal-icon-theme
     eza
-    banana-cursor
+    graphite-cursors
   ];
 
   programs.zoxide.enableFishIntegration = true;
