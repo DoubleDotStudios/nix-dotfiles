@@ -37,7 +37,7 @@ To use the dotfiles it takes a small amount of setup.
 1. Clone the repo:
 `git clone https://github.com/DoubleDotStudios/nix-dotfiles.git`
 
-2. Install [home-manager](https://nix-community.github.io/home-manager/index.xhtml) with flakes enabled in a [standalone fashion](https://nix-community.github.io/home-manager/index.xhtml#sec-flakes-standalone)
+2. Install [home-manager](https://nix-community.github.io/home-manager/index.xhtml)
 
 3. Move the `home-manager` to `~/.config/home-manager`:
 ```console
@@ -68,5 +68,6 @@ sudo mv etc/flake.nix /etc/nixos/
 9. Run:
 ```console
 sudo nixos-rebuild switch
+nix run home-manager/master -- init --switch
 home-manager switch
 ```
