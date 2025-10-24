@@ -41,5 +41,5 @@ mv /etc/nixos/flake.nix /etc/nixos/flake.nix.bak
 mv etc/* /etc/nixos/
 
 # Instruct user how to complete installation
-echo "To finish installing please go to https://github.com/DoubleDotStudios/onix-dots and follow steps 6, 7 and 9"
+echo "To finish installing please go to https://github.com/DoubleDotStudios/onix-dots and follow steps 2, 6, 7 and 9"
 echo "Have fun!"
