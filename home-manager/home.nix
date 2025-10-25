@@ -3,10 +3,11 @@
 {
   imports = [
     ./config/bash.nix
-    ./config/fish.nix
-    ./config/kitty.nix
     ./config/caelestia.nix
+    ./config/fish.nix
     ./config/hyprland.nix
+    ./config/kitty.nix
+    ./config/zen-browser.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -25,19 +26,26 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    # CLI
     zoxide
     fzf
-    bat
-    hyprpicker
-    cava
-    gpu-screen-recorder
-    duf
-    quickshell
     gh
-    nitch
-    reversal-icon-theme
+
+    # Command dropins (aliased in config/fish.nix)
     eza
+    duf
+    bat
+
+    # Caelestia
+    hyprpicker
+    gpu-screen-recorder
+    quickshell
+
+    # Theming
+    cava
+    nitch
     graphite-cursors
+    reversal-icon-theme
   ];
 
   programs.zoxide.enableFishIntegration = true;
