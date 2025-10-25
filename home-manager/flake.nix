@@ -34,15 +34,6 @@
           caelestia-shell.homeManagerModules.default
           zen-browser.homeModules.default
           ./home.nix
-
-          {
-           programs.caelestia.package = caelestia-shell.packages.${system}.default.overrideAttrs (old: {
-             postInstall = (old.postInstall or "") + ''
-               mkdir -p $out/lib/python3.13/site-packages/caelestia/data/schemes/
-               cp -r ${./misc/caelestia/schemes}/* $out/lib/python3.13/site-packages/caelestia/data/schemes/
-             '';
-           });
-          }
         ];
       };
     };
