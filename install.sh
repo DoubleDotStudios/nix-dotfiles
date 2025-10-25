@@ -32,6 +32,7 @@ fi
 # Replace `vaelixd` username and home with users
 sed -i "s!/home/vaelixd!$HOME!g" home-manager/home.nix
 sed -i "s/vaelixd/$USER/g" home-manager/home.nix
+sed -i "s/vaelixd/$USER/g" home-manager/flake.nix
 
 # Move home-manager config to `~/.config/home-manager`
 mv home-manager $CONFIG/home-manager
