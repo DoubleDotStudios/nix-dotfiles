@@ -33,7 +33,7 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  # services.desktopManager.plasma6.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -70,19 +70,15 @@
     btop
     nodejs_24
 
+  ];
+
+  fonts.packages = with pkgs; [
     # Fonts
     nerd-fonts.caskaydia-cove
     nerd-fonts.jetbrains-mono
-
-    # WM Config
-    kitty-themes
   ];
 
   programs.hyprland.enable = true;
-  programs.firefox = {
-    enable = true;
-    package = pkgs.librewolf;
-  };
 
   nix.settings.experimental-features = [
     "nix-command"
