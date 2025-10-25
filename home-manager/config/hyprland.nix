@@ -17,7 +17,7 @@
       xwayland.force_zero_scaling = true;
 
       env = [
-        "XCURSOR_SIZE,36"
+        "XCURSOR_SIZE,24"
         "XCURSOR_THEME,graphite-dark-nord"
       ];
 
@@ -27,6 +27,8 @@
 
       exec-once = [
         "caelestia-shell"
+        "hyprctl set-cursor graphite-dark-nord 24"
+        "sleep 2; caelestia shell wallpaper set ~/.local/state/caelestia/wallpaper/current"
       ];
 
       bind = [
